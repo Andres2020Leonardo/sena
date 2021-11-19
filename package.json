@@ -1,0 +1,28 @@
+{
+  "name": "sena-inventario-panelera",
+  "version": "1.0.0",
+  "description": "Proyecto final sena",
+  "main": "index.js",
+  "scripts": {
+    "start:back": "cd node_modules/jupiter-backend && npm start",
+    "start:front": "cd node_modules/jupiter-view && npm start",
+    "start": "concurrently --kill-others \"npm run start:back\" \"npm run start:front\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Andres2020Leonardo/inventario.git"
+  },
+  "author": "Andres Leonardo Muñeton Escobar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andres2020Leonardo/inventario/issues"
+  },
+  "homepage": "https://github.com/Andres2020Leonardo/inventario#readme",
+  "devDependencies": {
+    
+    "concurrently": "^6.4.0",
+    "jupiter-backend": "file:./jupiter",
+    "jupiter-view": "file:./jupiter-view"
+  }
+ 
+}
